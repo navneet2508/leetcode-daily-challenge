@@ -1,5 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
+char tolowercase(char ch)
+{
+    if (ch >= 'a' && ch <= 'z')
+    {
+        return ch;
+    }
+    else
+    {
+        char temp = ch - 'A' + 'a';
+        return temp;
+    }
+}
 int length(char ch[])
 {
     int count = 0;
@@ -16,7 +28,7 @@ bool checkpalindrome(char ch[], int n)
     int e = n - 1;
     while (s < e)
     {
-        if (ch[s] != ch[e])
+        if (tolowercase(ch[s]) != tolowercase(ch[e]))
         {
             return 0;
         }
