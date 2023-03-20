@@ -5,7 +5,10 @@ int main()
     int num = 5;
     int *p = &num;
     cout << "Number is " << num << endl;
+
+    // *p will print the value
     cout << "Value pointed by *p is " << *p << endl;
+    // p will print the address of the value
     cout << "Address pointed by p is " << p << endl;
     num++;
     cout << "Value pointed by *p after increment in num is " << *p << endl;
