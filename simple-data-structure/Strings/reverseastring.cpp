@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+// It will find the length of a string
 int lengthofstring(char ch[])
 {
     int count = 0;
@@ -9,6 +11,9 @@ int lengthofstring(char ch[])
     }
     return count;
 }
+
+// After finding length above , we will pass length in this function
+// and find reverse of a string
 void reversestring(char ch[], int len)
 {
     for (int i = len - 1; i >= 0; i--)
