@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// We are traversing loop till null character because string contains null character at last position
 int lengthofstring(char ch[])
 {
     int count = 0;
