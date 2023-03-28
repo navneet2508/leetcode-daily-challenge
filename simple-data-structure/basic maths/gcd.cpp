@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// Highest common factor
 int gcd(int n, int m)
 {
     if (n == 0)
