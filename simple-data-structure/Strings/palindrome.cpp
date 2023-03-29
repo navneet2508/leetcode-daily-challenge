@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// Converting string into lowercase
 char tolowercase(char ch)
 {
     if (ch >= 'a' && ch <= 'z')
