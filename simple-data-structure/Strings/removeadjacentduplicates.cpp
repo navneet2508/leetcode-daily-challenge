@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// Removing all adjacent duplicates
 string removeadjduplicates(string s)
 {
     string ans = "";
