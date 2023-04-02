@@ -1,12 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+// To check the flow of code
+void print(int arr[], int s, int e)
+{
+    for (int i = s; i <= e; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
 bool binarysearch(int *arr, int s, int e, int key)
 {
+    // To print array according to flow
+    print(arr, s, e);
+
+    // Base condition
     if (s > e)
     {
         return false;
     }
+
     int mid = s + (e - s) / 2;
+
+    // To print value of mid at different flows
+    cout << "Value of mid = " << arr[mid] << endl;
+
     if (arr[mid] == key)
     {
         return true;
